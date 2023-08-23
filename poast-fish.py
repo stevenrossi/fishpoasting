@@ -39,7 +39,6 @@ tweepy_api = tweepy.API(tweepy_auth)
 post = tweepy_api.simple_upload("fishpic.jpg")
 text = str(post)
 media_id = re.search("media_id=(.+?),", text).group(1)
-payload = {"text":z.iloc[0,0], "media": {"media_ids": ["{}".format(media_id)]}}
 
 poast_text = str(z.iloc[0,0])
 info = (poast_text[:278] + '..') if len(poast_text) > 278 else poast_text
