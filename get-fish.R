@@ -13,7 +13,7 @@ noaa <- read.csv("NOAA_URLs.csv")
 
 all <- rbind( noaa, uwDF )
 
-write.csv(all,file="URLs.csv")
+write.csv(all,file="URLs.csv",row.names=FALSE)
 
 ## NATURAL HISTORY OF USEFUL AQUATIC ANIMALS
 #bookSource <- c("\nNOAA Photo Library")
