@@ -25,7 +25,7 @@ client = tweepy.Client(
 zdat = pd.read_csv('URLs.csv')
 i = np.random.randint(0,len(zdat),size=1)
 z = zdat.iloc[i-1]
-fish_pic = z.iloc[0,1]
+fish_pic = z.iloc[0,0]
 img_data = requests.get(fish_pic).content
 with open("fishpic.jpg", "wb") as handler:
     handler.write(img_data)
@@ -41,8 +41,8 @@ post = tweepy_api.simple_upload("fishpic.jpg")
 text = str(post)
 media_id = re.search("media_id=(.+?),", text).group(1)
 
-poast_text = str(z.iloc[0,0])
-info = (poast_text[:278] + '..') if len(poast_text) > 278 else poast_text
+poast_text = str(z.iloc[0,1]+'\n'+z.iloc[0,2])
+info = (poast_text[:277] + '..') if len(poast_text) > 277 else poast_text
 
 # create a tweet
 def poast():
