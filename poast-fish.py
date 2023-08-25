@@ -41,7 +41,10 @@ post = tweepy_api.simple_upload("fishpic.jpg")
 text = str(post)
 media_id = re.search("media_id=(.+?),", text).group(1)
 
-poast_text = str(z.iloc[0,1]+'\n'+z.iloc[0,2])
+if( z.iloc[0,2]=="." ):
+    poast_text = str(z.iloc[0,1])
+else:
+    poast_text = str(z.iloc[0,1]+'\n'+z.iloc[0,2])
 info = (poast_text[:277] + '..') if len(poast_text) > 277 else poast_text
 
 # create a tweet
