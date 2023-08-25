@@ -64,7 +64,11 @@ uwDF   <- data.frame(img=uwURL,
                      desc=uw$desc,
                      source="UW Digital Collections")
 
-df <- rbind( df, uwDF )
+
+flickrDF <- read.csv("flickrURLs.csv")
+flickrDF$source <- ""
+
+df <- rbind( df, uwDF, flickrDF )
 
 write.csv(df,file="URLs.csv",row.names=FALSE)
 
