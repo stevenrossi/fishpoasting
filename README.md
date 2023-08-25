@@ -1,6 +1,6 @@
 # Python Bot for Tweeting Pictures of Fish
 
-Tweets a random photo of fish or fishing from online archives every hour on the hour.
+Tweets a random photo of fish or fishing every hour on the hour from [@fishpoasting](https://twitter.com/fishpoasting)
 
 Current list of photo sources:
 - [NOAA Photo Library](https://photolib.noaa.gov/Collections)
