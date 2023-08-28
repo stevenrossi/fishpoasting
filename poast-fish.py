@@ -12,7 +12,6 @@ BEARER_TOKEN = os.environ.get("BEARER_TOKEN")
 ACCESS_TOKEN = os.environ.get("ACCESS_TOKEN")
 ACCESS_TOKEN_SECRET = os.environ.get("ACCESS_TOKEN_SECRET")
 
-
 # create an OAuthHandler instance
 client = tweepy.Client(
     BEARER_TOKEN,
@@ -45,7 +44,7 @@ if( z.iloc[0,2]=="." ):
     poast_text = str(z.iloc[0,1])
 else:
     poast_text = str(z.iloc[0,1]+'\n'+z.iloc[0,2])
-info = (poast_text[:277] + '..') if len(poast_text) > 277 else poast_text
+info = (poast_text[:280]) if len(poast_text) > 280 else poast_text
 
 # create a tweet
 def poast():
