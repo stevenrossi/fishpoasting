@@ -66,7 +66,6 @@ uwDF   <- data.frame(img=uwURL,
 
 
 flickrDF <- read.csv("flickrURLs.csv")
-flickrDF$source <- ""
 
 df <- rbind( df, uwDF, flickrDF )
 
