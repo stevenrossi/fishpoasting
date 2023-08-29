@@ -52,6 +52,8 @@ library(dplyr)
 #
 #write.csv( df, row.names=FALSE, file="noaaURLs.csv" )
 
+
+
 df <- read.csv( file="noaaURLs.csv" )
 
 # University of Washington Collection
@@ -64,17 +66,20 @@ uwDF   <- data.frame(img=uwURL,
                      desc=uw$desc,
                      source="UW Digital Collections")
 
+# Flickr collection
 
 flickrDF <- read.csv("flickrURLs.csv",sep="|")
 
-df <- rbind( df, uwDF, flickrDF )
+
+# Canadian Great Lakes North Shore Fisheries Archive
+
+nsfDF <- read.csv("nsfDF.csv")
+
+# Everything
+
+df <- rbind( df, uwDF, flickrDF, nsfDF )
 
 write.csv(df,file="URLs.csv",row.names=FALSE)
-
-
-
-
-
 
 
 
