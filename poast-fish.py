@@ -2,6 +2,7 @@ import os
 import re
 import tweepy
 import requests
+import random
 import pandas as pd
 import numpy as np
 
@@ -22,8 +23,14 @@ client = tweepy.Client(
 )
 
 zdat = pd.read_csv('URLs.csv')
-i = np.random.randint(0,len(zdat),size=1)
-z = zdat.iloc[i-1]
+iseq = list(range(0,len(zdat),1))
+j = np.random.randint(0,len(zdat),size=1)
+w = zdat[zdat.columns[3]]
+i = random.choices( iseq, weights=w, k=1)
+i = np.asarray(i)
+
+z = zdat.iloc[j-1]
+
 fish_pic = z.iloc[0,0]
 img_data = requests.get(fish_pic).content
 with open("fishpic.jpg", "wb") as handler:

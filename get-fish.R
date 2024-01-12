@@ -81,7 +81,8 @@ bcDF <- read.csv("bellaCoolaDF.csv")
 
 # Everything
 
-df <- rbind( df, uwDF, flickrDF, nsfDF, bcDF )
+df <- rbind( df, uwDF, flickrDF, nsfDF, bcDF ) %>%
+      mutate( weight=ifelse( source=="Bella Coola Valley Museum, B.C. Central Coast Archives", 10000, 1 ) )
 
 write.csv(df,file="URLs.csv",row.names=FALSE)
 
