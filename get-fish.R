@@ -92,7 +92,7 @@ bcrdhDF <- read.csv( file="bcrdhDF.csv" ) %>%
 # Royal BC Museum
 
 royalDF <- read.csv( file="royalBC.csv" ) %>%
-           mutate( weight=3e10 )
+           mutate( weight=3 )
 
 # Everything
 
