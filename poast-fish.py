@@ -32,6 +32,9 @@ i = np.asarray(i)
 z = zdat.iloc[i-1]
 
 fish_pic = z.iloc[0,0]
+
+print(fish_pic)
+
 img_data = requests.get(fish_pic).content
 with open("fishpic.jpg", "wb") as handler:
     handler.write(img_data)
