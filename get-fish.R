@@ -54,7 +54,8 @@ library(dplyr)
 
 
 
-df <- read.csv( file="noaaURLs.csv" )
+df <- read.csv( file="noaaURLs.csv" ) %>%
+      mutate( weight=3 )
 
 # University of Washington Collection
 
@@ -64,25 +65,28 @@ uwURL  <- paste0("https://digitalcollections.lib.washington.edu/digital/iiif/fis
 
 uwDF   <- data.frame(img=uwURL,
                      desc=uw$desc,
-                     source="UW Digital Collections")
+                     source="UW Digital Collections",
+                     weight=3)
 
 # Flickr collection
 
-flickrDF <- read.csv("flickrURLs.csv",sep="|")
+flickrDF <- read.csv("flickrURLs.csv",sep="|") %>%
+            mutate( weight=1 )
 
 
 # Canadian Great Lakes North Shore Fisheries Archive
 
-nsfDF <- read.csv("nsfDF.csv")
+nsfDF <- read.csv("nsfDF.csv") %>%
+         mutate( weight=7 )
 
 # Bella Coola Archives
 
-bcDF <- read.csv("bellaCoolaDF.csv")
+bcDF <- read.csv("bellaCoolaDF.csv") %>%
+        mutate( weight=7 )
 
 # Everything
 
-df <- rbind( df, uwDF, flickrDF, nsfDF, bcDF ) %>%
-      mutate( weight=ifelse( source=="Bella Coola Valley Museum, B.C. Central Coast Archives", 10000, 1 ) )
+df <- rbind( df, uwDF, flickrDF, nsfDF, bcDF )
 
 write.csv(df,file="URLs.csv",row.names=FALSE)
 
