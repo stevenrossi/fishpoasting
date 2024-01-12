@@ -29,7 +29,7 @@ w = zdat[zdat.columns[3]]
 i = random.choices( iseq, weights=w, k=1)
 i = np.asarray(i)
 
-z = zdat.iloc[j-1]
+z = zdat.iloc[i-1]
 
 fish_pic = z.iloc[0,0]
 img_data = requests.get(fish_pic).content
