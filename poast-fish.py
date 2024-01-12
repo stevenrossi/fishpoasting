@@ -28,6 +28,7 @@ j = np.random.randint(0,len(zdat),size=1)
 w = zdat[zdat.columns[3]]
 i = random.choices( iseq, weights=w, k=1)
 i = np.asarray(i)
+i = j
 
 z = zdat.iloc[i-1]
 
