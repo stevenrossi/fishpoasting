@@ -75,9 +75,13 @@ flickrDF <- read.csv("flickrURLs.csv",sep="|")
 
 nsfDF <- read.csv("nsfDF.csv")
 
+# Bella Coola Archives
+
+bcDF <- read.csv("bellaCoolaDF.csv")
+
 # Everything
 
-df <- rbind( df, uwDF, flickrDF, nsfDF )
+df <- rbind( df, uwDF, flickrDF, nsfDF, bcDF )
 
 write.csv(df,file="URLs.csv",row.names=FALSE)
 
