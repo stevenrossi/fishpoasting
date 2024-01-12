@@ -89,9 +89,20 @@ bcDF <- read.csv("bellaCoolaDF.csv") %>%
 bcrdhDF <- read.csv( file="bcrdhDF.csv" ) %>%
            mutate( weight=3 )
 
+# Royal BC Museum
+
+royalDF <- read.csv( file="royalBC.csv" ) %>%
+           mutate( weight=3e10 )
+
 # Everything
 
-df <- rbind( df, uwDF, flickrDF, nsfDF, bcDF, bcrdhDF )
+df <- rbind( df,
+             uwDF,
+             flickrDF,
+             nsfDF,
+             bcDF,
+             bcrdhDF,
+             royalDF )
 
 write.csv(df,file="URLs.csv",row.names=FALSE)
 
