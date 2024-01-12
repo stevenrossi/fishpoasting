@@ -40,3 +40,4 @@ Current list of photo sources:
    	- UBC Okanagan Library - Okanagan Special Collections 
 (n=11)
 	- Windermere Valley Museum (n=7)
+- [History of the Pacific Halibut Fishery by William F. Thomson and Norman L. Freeman (1930)](https://iphc.int/uploads/pdf/sr/IPHC-1930-SR005.pdf) (n=18)
