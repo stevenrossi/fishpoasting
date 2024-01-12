@@ -8,3 +8,4 @@ Current list of photo sources:
 - [Ernst Mayr Library, Flickr](https://www.flickr.com/search/?text=%20Ernst%20Mayr%20Library%20ichthyology) (n=2457)
 - [Bella Coola Valley Museum, B.C. Central Coast Archives](https://northshorefisheries.net/) (n=48)
 - [Canadian Great Lakes North Shore Fisheries Archive](https://www.bellacoolamuseum.ca/) (n=41)
+- [British Columbia Regional Digitized History](https://bcrdh.ca/)(n=388)

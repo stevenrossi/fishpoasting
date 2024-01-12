@@ -84,9 +84,14 @@ nsfDF <- read.csv("nsfDF.csv") %>%
 bcDF <- read.csv("bellaCoolaDF.csv") %>%
         mutate( weight=7 )
 
+# BC Regional Digitized History
+
+bcrdhDF <- read.csv( file="bcrdhDF.csv" ) %>%
+           mutate( weight=3 )
+
 # Everything
 
-df <- rbind( df, uwDF, flickrDF, nsfDF, bcDF )
+df <- rbind( df, uwDF, flickrDF, nsfDF, bcDF, bcrdhDF )
 
 write.csv(df,file="URLs.csv",row.names=FALSE)
 
