@@ -26,8 +26,8 @@ zdat = pd.read_csv('URLs.csv')
 iseq = list(range(0,len(zdat),1))
 j = np.random.randint(0,len(zdat),size=1)
 w = zdat[zdat.columns[3]]
-i = random.choices( iseq, weights=w, k=1)
-i = np.asarray(2)
+i = random.choices( iseq, weights=1/w, k=1)
+i = np.asarray(i)
 
 z = zdat.iloc[i-1]
 
