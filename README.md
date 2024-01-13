@@ -41,3 +41,5 @@ Current list of photo sources:
 (n=11)
 	- Windermere Valley Museum (n=7)
 - [History of the Pacific Halibut Fishery by William F. Thomson and Norman L. Freeman (1930)](https://iphc.int/uploads/pdf/sr/IPHC-1930-SR005.pdf) (n=18)
+- [Visboek (Fish Book) by Adriaen Coenen (1580)](https://www.loc.gov/item/2021668059) (n=17)
+- [Gyotaku: The Art and Technique of the Japanese Fish Print by Yoshio Hiyama (1964)](https://archive.org/embed/gyotakuarttech00hiya)

@@ -104,6 +104,11 @@ halibutDF <- read.csv( file="halibutDF.csv" ) %>%
 fishbookDF <- read.csv( file="fishbookDF.csv" ) %>%
               mutate( weight=12 )   
 
+# Gyotaku book
+
+gyotakuHiyamaDF <- read.csv( file="gyotakuHiyamaDF.csv" ) %>%
+                   mutate( weight=12 ) 
+
 # Everything
 
 df <- rbind( df,
@@ -114,7 +119,8 @@ df <- rbind( df,
              bcrdhDF,
              royalDF,
              halibutDF,
-             fishbookDF )
+             fishbookDF,
+             gyotakuHiyamaDF )
 
 write.csv(df,file="URLs.csv",row.names=FALSE)
 
