@@ -97,7 +97,12 @@ royalDF <- read.csv( file="royalBC.csv" ) %>%
 # Thompson and Freeman - History of Halibut Fishery
 
 halibutDF <- read.csv( file="halibutDF.csv" ) %>%
-             mutate( weight=5 )           
+             mutate( weight=5 )   
+
+# Fishbook
+
+fishbookDF <- read.csv( file="fishbookDF.csv" ) %>%
+              mutate( weight=12 )   
 
 # Everything
 
@@ -108,7 +113,8 @@ df <- rbind( df,
              bcDF,
              bcrdhDF,
              royalDF,
-             halibutDF )
+             halibutDF,
+             fishbookDF )
 
 write.csv(df,file="URLs.csv",row.names=FALSE)
 
