@@ -9,7 +9,11 @@ Current list of photo sources:
 - [Bella Coola Valley Museum, B.C. Central Coast Archives](https://northshorefisheries.net/) (n=41)
 - [Canadian Great Lakes North Shore Fisheries Archive](https://www.bellacoolamuseum.ca/) (n=48)
 - [Royal British Columbia Museum Archives](https://search-bcarchives.royalbcmuseum.bc.ca/) (n=441)
-- [British Columbia Regional Digitized History](https://bcrdh.ca/)(n=388), which contains:
+- [History of the Pacific Halibut Fishery by William F. Thomson and Norman L. Freeman (1930)](https://iphc.int/uploads/pdf/sr/IPHC-1930-SR005.pdf) (n=18)
+- [Visboek (Fish Book) by Adriaen Coenen (1580)](https://www.loc.gov/item/2021668059) (n=17)
+- [Gyotaku: The Art and Technique of the Japanese Fish Print by Yoshio Hiyama (1964)](https://archive.org/embed/gyotakuarttech00hiya) (n=14)
+- [Gyotaku Flickr Group)](https://www.flickr.com/groups/gyotaku/) (n=34)
+- [British Columbia Regional Digitized History](https://bcrdh.ca/) (n=388), which contains:
 	- Boundary Museum and Archives (n=8)
 	- Chase & District Museum & Archives (n=11)
 	- Enderby and District Museum and Archives (n=6)
@@ -40,6 +44,3 @@ Current list of photo sources:
    	- UBC Okanagan Library - Okanagan Special Collections 
 (n=11)
 	- Windermere Valley Museum (n=7)
-- [History of the Pacific Halibut Fishery by William F. Thomson and Norman L. Freeman (1930)](https://iphc.int/uploads/pdf/sr/IPHC-1930-SR005.pdf) (n=18)
-- [Visboek (Fish Book) by Adriaen Coenen (1580)](https://www.loc.gov/item/2021668059) (n=17)
-- [Gyotaku: The Art and Technique of the Japanese Fish Print by Yoshio Hiyama (1964)](https://archive.org/embed/gyotakuarttech00hiya)
