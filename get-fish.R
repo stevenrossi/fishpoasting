@@ -121,6 +121,13 @@ poissonsDF <- read.csv( file="poissonsDF.csv" ) %>%
                       desc=source,
                       source=" " )
 
+# Renard book
+
+renardDF <- read.csv( file="renardDF.csv" ) %>%
+              mutate( weight=1e10,
+                      desc=source,
+                      source=" " )
+
 # Everything
 
 df <- rbind( df,
@@ -134,7 +141,8 @@ df <- rbind( df,
              fishbookDF,
              gyotakuHiyamaDF,
              gyotakuFlickrDF,
-             poissonsDF )
+             poissonsDF,
+             renardDF )
 
 write.csv(df,file="URLs.csv",row.names=FALSE)
 
