@@ -12,7 +12,7 @@ Current list of photo sources:
 - [History of the Pacific Halibut Fishery by William F. Thomson and Norman L. Freeman (1930)](https://iphc.int/uploads/pdf/sr/IPHC-1930-SR005.pdf) (n=18)
 - [Visboek (Fish Book) by Adriaen Coenen (1580)](https://www.loc.gov/item/2021668059) (n=17)
 - [Gyotaku: The Art and Technique of the Japanese Fish Print by Yoshio Hiyama (1964)](https://archive.org/embed/gyotakuarttech00hiya) (n=14)
-- [Gyotaku Flickr Group)](https://www.flickr.com/groups/gyotaku/) (n=34)
+- [Gyotaku Flickr Group](https://www.flickr.com/groups/gyotaku/) (n=34)
 - [British Columbia Regional Digitized History](https://bcrdh.ca/) (n=388), which contains:
 	- Boundary Museum and Archives (n=8)
 	- Chase & District Museum & Archives (n=11)
@@ -31,7 +31,6 @@ Current list of photo sources:
 	- Nelson Museum, Archives and Gallery  (n=3)
 	- Nicola Valley Museum & Archives  (n=29)
 	- Nikkei Internment Memorial Centre (n=4)
-	- Princeton & District Museum & Archives (n=2)
 	- Revelstoke Museum & Archives (n=23)
 	- Revelstoke Railway Museum (n=1)
 	- Salmon Arm Museum and Archives (n=3)
