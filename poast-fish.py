@@ -60,6 +60,10 @@ else:
     poast_text = str(z.iloc[0,1]+'\n'+z.iloc[0,2])
 info = (poast_text[:280]) if len(poast_text) > 280 else poast_text
 
+print("Tweet text start")
+print(info)
+print("Tweet text end")
+
 # create a tweet
 def poast():
     client.create_tweet(text=info,

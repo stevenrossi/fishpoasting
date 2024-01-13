@@ -134,7 +134,7 @@ renardDF <- read.csv( file="renardDF.csv" ) %>%
 # Lapecede book
 
 lapecedeDF <- read.csv( file="lapecedeDF.csv" ) %>%
-              mutate( weight=5e10,
+              mutate( weight=5,
                       desc=source,
                       source=" " )
 
