@@ -117,7 +117,8 @@ gyotakuFlickrDF <- read.csv( file="gyotakuFlickrDF.csv" ) %>%
 # Poissons book
 
 poissonsDF <- read.csv( file="poissonsDF.csv" ) %>%
-              mutate( weight=2e10 )
+              mutate( weight=2e10,
+                      desc="" )
 
 # Everything
 
