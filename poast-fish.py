@@ -29,7 +29,7 @@ w = zdat[zdat.columns[3]]
 i = random.choices( iseq, weights=w, k=1)
 i = np.asarray(i)
 
-#print(i)
+print(i)
 
 z = zdat.iloc[i]
 
