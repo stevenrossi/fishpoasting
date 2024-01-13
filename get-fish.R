@@ -138,6 +138,13 @@ lapecedeDF <- read.csv( file="lapecedeDF.csv" ) %>%
                       desc=source,
                       source=" " )
 
+# Kissling book
+
+kisslingDF <- read.csv( file="kisslingDF.csv" ) %>%
+              mutate( weight=5e10,
+                      desc=source,
+                      source=" " )
+
 # Everything
 
 df <- rbind( df,
@@ -153,7 +160,8 @@ df <- rbind( df,
              gyotakuFlickrDF,
              poissonsDF,
              renardDF,
-             lapecedeDF )
+             lapecedeDF,
+             kisslingDF )
 
 write.csv(df,file="URLs.csv",row.names=FALSE)
 
