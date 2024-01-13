@@ -59,15 +59,13 @@ df <- read.csv( file="noaaURLs.csv" ) %>%
 
 # University of Washington Collection
 
-uw <- read.csv("UW.csv",sep="|")
-
-uwURL  <- paste0("https://digitalcollections.lib.washington.edu/digital/iiif/fishimages/",uw$img,"/full/full/0/default.jpg")
-
-uwDF   <- data.frame(img=uwURL,
-                     desc=uw$desc,
-                     source="
+uw    <- read.csv("UW.csv",sep="|")
+uwURL <- paste0("https://digitalcollections.lib.washington.edu/digital/iiif/fishimages/",uw$img,"/full/full/0/default.jpg")
+uwDF  <- data.frame(img=uwURL,
+                    desc=uw$desc,
+                    source="
 University of Washington Digital Collections",
-                     weight=3)
+                    weight=3)
 
 # Flickr collection
 
@@ -76,7 +74,7 @@ flickrDF  <- data.frame( img=flickrURLS$img,
                          desc=flickrURLS$desc,
                          source="
 Ernst Mayr Library, Flickr",
-                          weight=1e10 )
+                         weight=1 )
 
 
 # Canadian Great Lakes North Shore Fisheries Archive
@@ -136,7 +134,7 @@ renardDF <- read.csv( file="renardDF.csv" ) %>%
 # Lapecede book
 
 lapecedeDF <- read.csv( file="lapecedeDF.csv" ) %>%
-              mutate( weight=5,
+              mutate( weight=5e10,
                       desc=source,
                       source=" " )
 
