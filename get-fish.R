@@ -65,13 +65,18 @@ uwURL  <- paste0("https://digitalcollections.lib.washington.edu/digital/iiif/fis
 
 uwDF   <- data.frame(img=uwURL,
                      desc=uw$desc,
-                     source="UW Digital Collections",
+                     source="
+University of Washington Digital Collections",
                      weight=3)
 
 # Flickr collection
 
-flickrDF <- read.csv("flickrURLs.csv",sep="|") %>%
-            mutate( weight=1 )
+flickrURLS <- read.csv("flickrURLs.csv",sep="|")
+flickrDF  <- data.frame( img=flickrURLS$img,
+                         desc=flickrURLS$desc,
+                         source="
+Ernst Mayr Library, Flickr",
+                          weight=1e10 )
 
 
 # Canadian Great Lakes North Shore Fisheries Archive
@@ -131,7 +136,7 @@ renardDF <- read.csv( file="renardDF.csv" ) %>%
 # Lapecede book
 
 lapecedeDF <- read.csv( file="lapecedeDF.csv" ) %>%
-              mutate( weight=5e10,
+              mutate( weight=5,
                       desc=source,
                       source=" " )
 
