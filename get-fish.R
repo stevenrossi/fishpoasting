@@ -141,9 +141,7 @@ lapecedeDF <- read.csv( file="lapecedeDF.csv" ) %>%
 # Kissling book
 
 kisslingDF <- read.csv( file="kisslingDF.csv" ) %>%
-              mutate( weight=5e10,
-                      desc=source,
-                      source=" " )
+              mutate( weight=5e10 )
 
 # Everything
 
