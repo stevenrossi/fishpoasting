@@ -144,7 +144,7 @@ df <- rbind( df,
              poissonsDF,
              renardDF )
 
-write.csv(df,file="URLs.csv",row.names=FALSE,fileEncoding = "UTF-8")
+write.csv(df,file="URLs.csv",row.names=FALSE)
 
 
 
