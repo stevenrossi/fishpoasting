@@ -141,7 +141,13 @@ lapecedeDF <- read.csv( file="lapecedeDF.csv" ) %>%
 # Kissling book
 
 kisslingDF <- read.csv( file="kisslingDF.csv" ) %>%
-              mutate( weight=20e10 )
+              mutate( weight=20 )
+
+# Arcturus book
+
+arcturusDF <- read.csv( file="arcturusDF.csv" ) %>%
+              mutate( weight=10,
+                      source="Arcturus Adventure (1926) illustrated by Else Bostelmann" )
 
 # Everything
 
@@ -159,7 +165,8 @@ df <- rbind( df,
              poissonsDF,
              renardDF,
              lapecedeDF,
-             kisslingDF )
+             kisslingDF,
+             arcturusDF )
 
 write.csv(df,file="URLs.csv",row.names=FALSE)
 
