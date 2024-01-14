@@ -147,12 +147,12 @@ kisslingDF <- read.csv( file="kisslingDF.csv" ) %>%
 
 arcturusDF <- read.csv( file="arcturusDF.csv" ) %>%
               mutate( weight=10,
-                      source="Arcturus Adventure (1926) illustrated by Else Bostelmann" )
+                      source="Arcturus Adventure (1926)" )
 
-# Zoologica book
+# Zoologica
 
 zoologicaDF <- read.csv( file="zoologicaDF.csv" ) %>%
-                mutate( weight=8 )
+                mutate( weight=4 )
 
 # Everything
 
