@@ -152,7 +152,7 @@ arcturusDF <- read.csv( file="arcturusDF.csv" ) %>%
 # Zoologica book
 
 zoologicaDF <- read.csv( file="zoologicaDF.csv" ) %>%
-                mutate( weight=8e10 )
+                mutate( weight=8 )
 
 # Everything
 

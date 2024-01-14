@@ -15,6 +15,7 @@ Current list of photo sources:
 - [Poissons, ecrevisses et crabes, de diverses couleurs et figures extraordinaires, que l'on trouve autour des Isles Moluques, et sur les cotes des Terres Australes (Fish, crayfish and crabs, of various colors and extraordinary shapes, found around the Molucca Islands, and on the coasts of the Southern Lands) by Louis Renard (1719)](http://www.biodiversitylibrary.org/item/200575) (n=100)
 - [History of the Pacific Halibut Fishery by William F. Thomson and Norman L. Freeman (1930)](https://iphc.int/uploads/pdf/sr/IPHC-1930-SR005.pdf) (n=18)
 - [The Arcturus Adventure (1926) illustrated by Else Bostelmann](https://www.biodiversitylibrary.org/item/26644)
+- [Zoologica Vol. XII (1929-1934)](https://www.biodiversitylibrary.org/item/208062) (n=52)
 - [Gyotaku: The Art and Technique of the Japanese Fish Print by Yoshio Hiyama (1964)](https://archive.org/embed/gyotakuarttech00hiya) (n=14)
 - [Gyotaku Flickr Group](https://www.flickr.com/groups/gyotaku/) (n=34)
 - [British Columbia Regional Digitized History](https://bcrdh.ca/) (n=388), which contains:
