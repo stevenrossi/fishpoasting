@@ -152,7 +152,17 @@ arcturusDF <- read.csv( file="arcturusDF.csv" ) %>%
 # Zoologica
 
 zoologicaDF <- read.csv( file="zoologicaDF.csv" ) %>%
-                mutate( weight=4 )
+               mutate( weight=4 )
+
+# Hiroshige paintings
+
+hiroshigeDF <- read.csv( file="hiroshigeDF.csv" ) %>%
+               mutate( weight=4e10 )
+
+# Other
+
+otherDF <- read.csv( file="otherDF.csv" ) %>%
+           mutate( weight=2 )
 
 # Everything
 
@@ -172,7 +182,8 @@ df <- rbind( df,
              lapecedeDF,
              kisslingDF,
              arcturusDF,
-             zoologicaDF )
+             zoologicaDF,
+             hiroshigeDF )
 
 write.csv(df,file="URLs.csv",row.names=FALSE)
 
