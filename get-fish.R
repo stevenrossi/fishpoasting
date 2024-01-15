@@ -183,7 +183,8 @@ df <- rbind( df,
              kisslingDF,
              arcturusDF,
              zoologicaDF,
-             hiroshigeDF )
+             hiroshigeDF,
+             otherDF )
 
 write.csv(df,file="URLs.csv",row.names=FALSE)
 
