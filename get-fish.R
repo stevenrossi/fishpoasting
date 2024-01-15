@@ -162,7 +162,7 @@ hiroshigeDF <- read.csv( file="hiroshigeDF.csv" ) %>%
 # Other
 
 otherDF <- read.csv( file="otherDF.csv" ) %>%
-           mutate( weight=2e10 )
+           mutate( weight=2 )
 
 # Everything
 
