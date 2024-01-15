@@ -157,12 +157,12 @@ zoologicaDF <- read.csv( file="zoologicaDF.csv" ) %>%
 # Hiroshige paintings
 
 hiroshigeDF <- read.csv( file="hiroshigeDF.csv" ) %>%
-               mutate( weight=4e10 )
+               mutate( weight=4 )
 
 # Other
 
 otherDF <- read.csv( file="otherDF.csv" ) %>%
-           mutate( weight=2 )
+           mutate( weight=2e10 )
 
 # Everything
 
