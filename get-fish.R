@@ -95,17 +95,17 @@ bcrdhDF <- read.csv( file="bcrdhDF.csv" ) %>%
 # Royal BC Museum
 
 royalDF <- read.csv( file="royalBC.csv" ) %>%
-           mutate( weight=3 )
+           mutate( weight=1 )
 
 # Thompson and Freeman - History of Halibut Fishery
 
 halibutDF <- read.csv( file="halibutDF.csv" ) %>%
-             mutate( weight=5 )   
+             mutate( weight=1 )   
 
 # Fishbook
 
 fishbookDF <- read.csv( file="fishbookDF.csv" ) %>%
-              mutate( weight=12 )   
+              mutate( weight=8 )   
 
 # Gyotaku book
 
@@ -146,13 +146,13 @@ kisslingDF <- read.csv( file="kisslingDF.csv" ) %>%
 # Arcturus book
 
 arcturusDF <- read.csv( file="arcturusDF.csv" ) %>%
-              mutate( weight=10,
+              mutate( weight=2,
                       source="Arcturus Adventure (1926)" )
 
 # Zoologica
 
 zoologicaDF <- read.csv( file="zoologicaDF.csv" ) %>%
-               mutate( weight=4 )
+               mutate( weight=2 )
 
 # Hiroshige paintings
 
