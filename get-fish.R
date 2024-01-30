@@ -80,12 +80,12 @@ Ernst Mayr Library, Flickr",
 # Canadian Great Lakes North Shore Fisheries Archive
 
 nsfDF <- read.csv("nsfDF.csv") %>%
-         mutate( weight=7 )
+         mutate( weight=5 )
 
 # Bella Coola Archives
 
 bcDF <- read.csv("bellaCoolaDF.csv") %>%
-        mutate( weight=7 )
+        mutate( weight=5 )
 
 # BC Regional Digitized History
 
@@ -115,26 +115,26 @@ gyotakuHiyamaDF <- read.csv( file="gyotakuHiyamaDF.csv" ) %>%
 # Gyotaku Flickr
 
 gyotakuFlickrDF <- read.csv( file="gyotakuFlickrDF.csv" ) %>%
-                   mutate( weight=1.5 )
+                   mutate( weight=2 )
 
 # Poissons book
 
 poissonsDF <- read.csv( file="poissonsDF.csv" ) %>%
-              mutate( weight=1.5,
+              mutate( weight=4,
                       desc=source,
                       source=" " )
 
 # Renard book
 
 renardDF <- read.csv( file="renardDF.csv" ) %>%
-              mutate( weight=2,
+              mutate( weight=5,
                       desc=source,
                       source=" " )
 
 # Lapecede book
 
 lapecedeDF <- read.csv( file="lapecedeDF.csv" ) %>%
-              mutate( weight=5,
+              mutate( weight=8,
                       desc=source,
                       source=" " )
 
@@ -146,7 +146,7 @@ kisslingDF <- read.csv( file="kisslingDF.csv" ) %>%
 # Arcturus book
 
 arcturusDF <- read.csv( file="arcturusDF.csv" ) %>%
-              mutate( weight=2,
+              mutate( weight=1.5,
                       source="Arcturus Adventure (1926)" )
 
 # Zoologica
@@ -157,12 +157,12 @@ zoologicaDF <- read.csv( file="zoologicaDF.csv" ) %>%
 # Hiroshige paintings
 
 hiroshigeDF <- read.csv( file="hiroshigeDF.csv" ) %>%
-               mutate( weight=4 )
+               mutate( weight=6 )
 
 # Other
 
 otherDF <- read.csv( file="otherDF.csv" ) %>%
-           mutate( weight=2 )
+           mutate( weight=3 )
 
 # Everything
 
