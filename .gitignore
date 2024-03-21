@@ -163,3 +163,4 @@ cython_debug/
 .Rapp.history
 
 tools.R
+download-flickr.R
