@@ -164,3 +164,7 @@ cython_debug/
 
 tools.R
 download-flickr.R
+
+images/noaa
+images/ernstMayr
+images/cuvier
