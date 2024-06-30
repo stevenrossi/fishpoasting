@@ -22,7 +22,7 @@ client = tweepy.Client(
     ACCESS_TOKEN_SECRET, 
 )
 
-zdat = pd.read_csv('URLs.csv')
+zdat = pd.read_csv('urls/URLs.csv')
 iseq = list(range(0,len(zdat),1))
 j = np.random.randint(0,len(zdat),size=1)
 w = zdat[zdat.columns[3]]
