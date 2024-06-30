@@ -12,4 +12,4 @@ desc <- readLines("nsf-desc.txt")
 
 nsfDF <- data.frame( img=sourceCode, desc=desc, source="Canadian Great Lakes North Shore Fisheries Archive" )
 
-write.csv(nsfDF,file="nsfDF.csv",row.names=FALSE)
+write.csv(nsfDF,file="urls/nsfDF.csv",row.names=FALSE)

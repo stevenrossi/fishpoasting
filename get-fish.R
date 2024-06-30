@@ -5,7 +5,7 @@ library(dplyr)
 
 # NOAA Collection
 
-noaa1 <- read.csv( file="noaaURLs-historicFisheries.csv" )
+noaa1 <- read.csv( file="noaaURLs-historicFisheriesResearch.csv" )
 noaa2 <- read.csv( file="noaaURLs-historyMethods.csv" )
 noaa3 <- read.csv( file="noaaURLs-naturalHistory.csv" )
 
@@ -14,7 +14,7 @@ noaaDF <- rbind( noaa1, noaa2, noaa3 ) %>%
 
 # University of Washington Collection
 
-uw    <- read.csv("UW.csv",sep="|")
+uw    <- read.csv("urls/UW.csv",sep="|")
 uwURL <- paste0("https://digitalcollections.lib.washington.edu/digital/iiif/fishimages/",uw$img,"/full/full/0/default.jpg")
 uwDF  <- data.frame(img=uwURL,
                     desc=uw$desc,
@@ -24,7 +24,7 @@ University of Washington Digital Collections",
 
 # Flickr collection
 
-flickrURLS <- read.csv("flickrURLs.csv",sep="|")
+flickrURLS <- read.csv("urls/flickrURLs.csv",sep="|")
 flickrDF  <- data.frame( img=flickrURLS$img,
                          desc=flickrURLS$desc,
                          source="
@@ -34,89 +34,89 @@ Ernst Mayr Library, Flickr",
 
 # Canadian Great Lakes North Shore Fisheries Archive
 
-nsfDF <- read.csv("nsfDF.csv") %>%
+nsfDF <- read.csv("urls/nsfDF.csv") %>%
          mutate( weight=5 )
 
 # Bella Coola Archives
 
-bcDF <- read.csv("bellaCoolaDF.csv") %>%
+bcDF <- read.csv("urls/bellaCoolaDF.csv") %>%
         mutate( weight=5 )
 
 # BC Regional Digitized History
 
-bcrdhDF <- read.csv( file="bcrdhDF.csv" ) %>%
+bcrdhDF <- read.csv( file="urls/bcrdhDF.csv" ) %>%
            mutate( weight=3 )
 
 # Royal BC Museum
 
-royalDF <- read.csv( file="royalBC.csv" ) %>%
+royalDF <- read.csv( file="urls/royalBC.csv" ) %>%
            mutate( weight=1 )
 
 # Thompson and Freeman - History of Halibut Fishery
 
-halibutDF <- read.csv( file="halibutDF.csv" ) %>%
+halibutDF <- read.csv( file="urls/halibutDF.csv" ) %>%
              mutate( weight=1 )   
 
 # Fishbook
 
-fishbookDF <- read.csv( file="fishbookDF.csv" ) %>%
+fishbookDF <- read.csv( file="urls/fishbookDF.csv" ) %>%
               mutate( weight=8 )   
 
 # Gyotaku book
 
-gyotakuHiyamaDF <- read.csv( file="gyotakuHiyamaDF.csv" ) %>%
+gyotakuHiyamaDF <- read.csv( file="urls/gyotakuHiyamaDF.csv" ) %>%
                    mutate( weight=12 ) 
 
 # Gyotaku Flickr
 
-gyotakuFlickrDF <- read.csv( file="gyotakuFlickrDF.csv" ) %>%
+gyotakuFlickrDF <- read.csv( file="urls/gyotakuFlickrDF.csv" ) %>%
                    mutate( weight=2 )
 
 # Poissons book
 
-poissonsDF <- read.csv( file="poissonsDF.csv" ) %>%
+poissonsDF <- read.csv( file="urls/poissonsDF.csv" ) %>%
               mutate( weight=4,
                       desc=source,
                       source=" " )
 
 # Renard book
 
-renardDF <- read.csv( file="renardDF.csv" ) %>%
+renardDF <- read.csv( file="urls/renardDF.csv" ) %>%
               mutate( weight=5,
                       desc=source,
                       source=" " )
 
 # Lapecede book
 
-lapecedeDF <- read.csv( file="lapecedeDF.csv" ) %>%
+lapecedeDF <- read.csv( file="urls/lapecedeDF.csv" ) %>%
               mutate( weight=8,
                       desc=source,
                       source=" " )
 
 # Kissling book
 
-kisslingDF <- read.csv( file="kisslingDF.csv" ) %>%
+kisslingDF <- read.csv( file="urls/kisslingDF.csv" ) %>%
               mutate( weight=20 )
 
 # Arcturus book
 
-arcturusDF <- read.csv( file="arcturusDF.csv" ) %>%
+arcturusDF <- read.csv( file="urls/arcturusDF.csv" ) %>%
               mutate( weight=1.5,
                       source="Arcturus Adventure (1926)" )
 
 # Zoologica
 
-zoologicaDF <- read.csv( file="zoologicaDF.csv" ) %>%
+zoologicaDF <- read.csv( file="urls/zoologicaDF.csv" ) %>%
                mutate( weight=2 )
 
 # Hiroshige paintings
 
-hiroshigeDF <- read.csv( file="hiroshigeDF.csv" ) %>%
+hiroshigeDF <- read.csv( file="urls/hiroshigeDF.csv" ) %>%
                mutate( weight=6 )
 
 # Other
 
-otherDF <- read.csv( file="otherDF.csv" ) %>%
+otherDF <- read.csv( file="urls/otherDF.csv" ) %>%
            mutate( weight=3 )
 
 # Everything
@@ -141,7 +141,7 @@ df <- rbind( noaaDF,
              hiroshigeDF,
              otherDF )
 
-write.csv(df,file="URLs.csv",row.names=FALSE)
+write.csv(df,file="urls/URLs.csv",row.names=FALSE)
 
 
 

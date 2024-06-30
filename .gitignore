@@ -168,3 +168,9 @@ download-flickr.R
 images/noaa
 images/ernstMayr
 images/cuvier
+images/nationalArchives
+test.csv
+temp.R
+purge-NOAA.R
+
+
