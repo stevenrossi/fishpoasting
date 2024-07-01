@@ -8,9 +8,14 @@ library(dplyr)
 noaa1 <- read.csv( file="noaaURLs-historicFisheriesResearch.csv" )
 noaa2 <- read.csv( file="noaaURLs-historyMethods.csv" )
 noaa3 <- read.csv( file="noaaURLs-naturalHistory.csv" )
+noaa4 <- read.csv( file="noaaURLs-historicFisheries.csv" )
 
-noaaDF <- rbind( noaa1, noaa2, noaa3 ) %>%
+noaaDF <- rbind( noaa1, noaa2, noaa3, noaa4 ) %>%
           mutate( weight=3 )
+
+# National Archives
+nfDF <- read.csv("urls/nationalArchivesDF.csv") %>%
+        mutate( weight=2e10 )  
 
 # University of Washington Collection
 
@@ -122,6 +127,7 @@ otherDF <- read.csv( file="urls/otherDF.csv" ) %>%
 # Everything
 
 df <- rbind( noaaDF,
+             nfDF
              uwDF,
              flickrDF,
              nsfDF,
