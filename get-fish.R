@@ -15,7 +15,7 @@ noaaDF <- rbind( noaa1, noaa2, noaa3, noaa4 ) %>%
 
 # National Archives
 nfDF <- read.csv("urls/nationalArchivesDF.csv") %>%
-        mutate( weight=2e10 )  
+        mutate( weight=2 )  
 
 # University of Washington Collection
 
