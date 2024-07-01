@@ -127,7 +127,7 @@ otherDF <- read.csv( file="urls/otherDF.csv" ) %>%
 # Everything
 
 df <- rbind( noaaDF,
-             nfDF
+             nfDF,
              uwDF,
              flickrDF,
              nsfDF,
