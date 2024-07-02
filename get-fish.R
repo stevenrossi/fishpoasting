@@ -55,7 +55,7 @@ bcrdhDF <- read.csv( file="urls/bcrdhDF.csv" ) %>%
 # Royal BC Museum
 
 royalDF <- read.csv( file="urls/royalBC.csv" ) %>%
-           mutate( weight=1e10 )
+           mutate( weight=1 )
 
 # Thompson and Freeman - History of Halibut Fishery
 
