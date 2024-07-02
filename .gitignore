@@ -169,6 +169,7 @@ images/noaa
 images/ernstMayr
 images/cuvier
 images/nationalArchives
+images/royalBC
 test.csv
 temp.R
 purge-NOAA.R
