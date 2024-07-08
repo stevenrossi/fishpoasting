@@ -50,7 +50,7 @@ bcDF <- read.csv("urls/bellaCoolaDF.csv") %>%
 # BC Regional Digitized History
 
 bcrdhDF <- read.csv( file="urls/bcrdhDF.csv" ) %>%
-           mutate( weight=3 )
+           mutate( weight=0 )
 
 # Royal BC Museum
 
