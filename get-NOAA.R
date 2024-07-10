@@ -19,7 +19,7 @@ N <- length(noaaURLs)
 
 df <- data.frame( img=rep(NA,N), desc=rep(NA,N), source=rep(NA,N) )
 
-df <- read.csv("noaaURLs-historicFisheries.csv")
+df <- read.csv("urls/noaaURLs-historicFisheries.csv")
 
 j <- 1
 
