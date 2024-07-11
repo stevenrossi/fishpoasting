@@ -171,9 +171,10 @@ images/cuvier
 images/nationalArchives
 images/royalBC
 images/bcrdh
+images/flickr
 test.csv
 temp.R
 purge-NOAA.R
 get-NOAA.R
-
+flickr.R
 

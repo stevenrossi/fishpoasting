@@ -38,7 +38,11 @@ flickrDF  <- data.frame( img=flickrURLS$img,
                          desc=flickrURLS$desc,
                          source="
 Ernst Mayr Library, Flickr",
-                         weight=1 )
+                         weight=1 ) %>%
+             mutate( source = ifelse( grepl("La Pêche et les poissons",desc), "
+La Pêche et les poissons by Henri de La Blanchère
+Paris, C. Delagrave et cie, 1868", source ),
+                     weight = ifelse( grepl("La Pêche et les poissons",desc), 1e10, 0 ) )
 
 
 # Canadian Great Lakes North Shore Fisheries Archive
