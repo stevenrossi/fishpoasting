@@ -33,7 +33,7 @@ University of Washington Digital Collections",
 
 # Flickr collection
 
-flickrDF <- read.csv("urls/flickrURLs.csv",sep="|") %>%
+flickrDF <- read.csv("urls/flickrURLs.csv") %>%
             mutate( weight=0.9 )
 
 # Canadian Great Lakes North Shore Fisheries Archive
@@ -44,7 +44,7 @@ nsfDF <- read.csv("urls/nsfDF.csv") %>%
 # La pêche et les poissons. Nouveau Dictionnaire général des pêches
 
 blanchDF <- read.csv("urls/blanchereDF.csv") %>%
-         mutate( weight=1e10 )
+         mutate( weight=5 )
 
 # Bella Coola Archives
 
