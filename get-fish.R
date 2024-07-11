@@ -41,6 +41,11 @@ flickrDF <- read.csv("urls/flickrURLs.csv",sep="|") %>%
 nsfDF <- read.csv("urls/nsfDF.csv") %>%
          mutate( weight=5 )
 
+# La pêche et les poissons. Nouveau Dictionnaire général des pêches
+
+blanchDF <- read.csv("urls/blanchereDF.csv") %>%
+         mutate( weight=1e10 )
+
 # Bella Coola Archives
 
 bcDF <- read.csv("urls/bellaCoolaDF.csv") %>%
@@ -132,6 +137,7 @@ df <- rbind( noaaDF,
              flickrDF,
              nsfDF,
              bcDF,
+             blanchDF,
              bcrdhDF,
              royalDF,
              halibutDF,
