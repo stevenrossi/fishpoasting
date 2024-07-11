@@ -38,7 +38,8 @@ flickrDF  <- data.frame( img=flickrURLS$img,
                          desc=flickrURLS$desc,
                          source="
 Ernst Mayr Library",
-                         weight=0.9 )
+                         weight=0.9 ) %>%
+              mutate( weight=ifelse( img=="https://farm7.staticflickr.com/6219/6266706397_1f49912e36_b.jpg", 1e10, 1 ) )
 
 # Canadian Great Lakes North Shore Fisheries Archive
 
