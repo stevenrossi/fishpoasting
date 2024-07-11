@@ -42,7 +42,7 @@ Ernst Mayr Library, Flickr",
              mutate( source = ifelse( grepl("La Pêche et les poissons",desc), "
 La Pêche et les poissons by Henri de La Blanchère
 Paris, C. Delagrave et cie, 1868", source ),
-                     weight = ifelse( grepl("La Pêche et les poissons",desc), 1e10, 0 ) )
+                     weight = ifelse( img=="https://farm7.staticflickr.com/6219/6266706397_1f49912e36_b.jpg", 1e10, 0 ) )
 
 
 # Canadian Great Lakes North Shore Fisheries Archive
