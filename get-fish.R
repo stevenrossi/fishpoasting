@@ -10,7 +10,7 @@ noaa2 <- read.csv( file="urls/noaaURLs-historyMethods.csv" )
 noaa3 <- read.csv( file="urls/noaaURLs-naturalHistory.csv" )
 noaa4 <- read.csv( file="urls/noaaURLs-historicFisheries.csv" )
 
-noaaDF <- rbind( noaa1, noaa2, noaa3, noaa4 ) %>%
+noaaDF <- rbind( noaa4 ) %>%
           mutate( weight=0.5 )
 
 # National Archives
@@ -130,7 +130,7 @@ otherDF <- read.csv( file="urls/otherDF.csv" ) %>%
 
 # Everything
 
-df <- rbind( noaaDF,
+df <- rbind( #noaaDF,
              nfDF,
              gfcDF,
              uwDF,
